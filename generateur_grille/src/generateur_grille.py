@@ -24,18 +24,8 @@ class GenerateurGrille(metaclass=Singleton):
         # inputs
         self.grilleI = None
 
-        # outputs
-        self._grille_jpgO = None
 
-    # outputs
-    @property
-    def grille_jpgO(self):
-        return self._grille_jpgO
 
-    @grille_jpgO.setter
-    def grille_jpgO(self, value):
-        self._grille_jpgO = value
-        if self._grille_jpgO is not None:
-            igs.output_set_string("grille_jpg", self._grille_jpgO)
+
 
 

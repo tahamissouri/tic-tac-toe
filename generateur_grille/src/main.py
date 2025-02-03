@@ -169,7 +169,7 @@ def grille_input_callback(iop_type, name, value_type, value, my_data):
         absolute_path = Path(filename).resolve()
 
         print(absolute_path)
-        igs.output_set_string("grille_jpg", absolute_path)
+
         #igs.service_call("Whiteboard", "setBackgroundColor", "white", "")
 
         """
@@ -328,7 +328,6 @@ if __name__ == "__main__":
 
     igs.input_create("grille", igs.STRING_T, None)
 
-    igs.output_create("grille_jpg", igs.STRING_T, None)
 
     igs.observe_input("grille", grille_input_callback, agent)
 
